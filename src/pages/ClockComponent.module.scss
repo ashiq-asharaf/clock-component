@@ -1,0 +1,44 @@
+.clockContainer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+  
+  .clockFace {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: black;
+    border: 4px solid white;
+  }
+  
+  .hourMarker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform-origin: center center;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .taskSlice {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transform-origin: 50% 50%;
+    z-index: 1;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  }
+  
+  .digitalClock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+  }
+  
